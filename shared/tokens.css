@@ -1,0 +1,58 @@
+/* ------------------------------------------------------------------
+   Design tokens — shared by the landing page and the app.
+   Rebrand here: colours, fonts and corner radii all come from this file.
+------------------------------------------------------------------- */
+:root {
+  /* Brand */
+  --brand: #FF5B3A;          /* main accent (buttons, highlights) */
+  --brand-ink: #16141A;      /* text colour on top of --brand */
+  --brand-soft: #FFE1D8;
+  --brand-deep: #E0421F;
+
+  /* Supporting tints */
+  --sun: #FFD84D;
+  --sun-soft: #FFF3C4;
+  --mint: #BDEFD0;
+  --sky: #CFE3FF;
+  --lilac: #E4DBFF;
+  --peach: #FFE1D8;
+
+  /* Neutrals */
+  --ink: #16141A;
+  --ink-2: #4B4752;
+  --ink-3: #8C8793;
+  --line: #E8E2D8;
+  --line-strong: #D6CEC1;
+  --paper: #FBF7F0;
+  --paper-2: #F4EEE3;
+  --card: #FFFFFF;
+
+  /* Status */
+  --ok: #1F9D55;
+  --ok-soft: #DDF5E6;
+  --danger: #E5383B;
+
+  /* Type */
+  --font-display: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+
+  /* Shape */
+  --r-sm: 10px;
+  --r: 16px;
+  --r-lg: 24px;
+  --r-xl: 36px;
+
+  /* Depth */
+  --pop: 0 4px 0 var(--ink);
+  --pop-sm: 0 3px 0 var(--ink);
+  --soft: 0 18px 40px -18px rgba(22, 20, 26, .35);
+
+  --ease: cubic-bezier(.2, .8, .2, 1);
+}
+
+.tint-sun   { background: var(--sun); }
+.tint-mint  { background: var(--mint); }
+.tint-sky   { background: var(--sky); }
+.tint-lilac { background: var(--lilac); }
+.tint-peach { background: var(--peach); }
+.tint-brand { background: var(--brand); }

@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tutora — Online language tutors, 1-on-1</title>
+  <meta name="description" content="Find an online language tutor you click with. Book a 1-on-1 trial lesson in minutes and start speaking from day one." />
+  <meta name="theme-color" content="#FBF7F0" />
+  <link rel="icon" href="app/icons/icon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared/tokens.css" />
+  <link rel="stylesheet" href="landing.css" />
+</head>
+<body>
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="./" aria-label="Tutora home"><span class="logo-mark" data-logo></span><span>tutora</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Main">
+        <a href="app/#/search">Find tutors</a>
+        <a href="#how">How it works</a>
+        <a href="#teach">Become a tutor</a>
+        <a href="#business">For teams</a>
+        <div class="nav-mobile-actions">
+          <a class="btn btn-ghost" href="app/#/welcome">Log in</a>
+          <a class="btn btn-primary" href="app/#/onboarding">Get started</a>
+        </div>
+      </nav>
+      <div class="nav-actions">
+        <button class="nav-lang" type="button" data-soon="Site language">EN · USD</button>
+        <a class="nav-login" href="app/#/welcome">Log in</a>
+        <a class="btn btn-primary btn-sm" href="app/#/onboarding">Get started</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal"><span class="dot"></span> 1-on-1 online language lessons</p>
+          <h1 class="reveal" style="--d:.05s">Talk your way to <span class="scribble">fluent<svg viewBox="0 0 300 30" preserveAspectRatio="none" aria-hidden="true"><path d="M4 20 C 60 6, 120 28, 180 14 S 270 8, 296 18" /></svg></span>.</h1>
+          <p class="lede reveal" style="--d:.12s">Pick a tutor you click with, book a lesson in minutes, and start speaking from day one. Lessons fit your schedule, your level and your budget.</p>
+
+          <form class="search reveal" style="--d:.2s" id="heroSearch">
+            <label class="search-field">
+              <span class="search-label">I want to learn</span>
+              <select id="heroLang" name="lang" aria-label="Language"></select>
+            </label>
+            <label class="search-field search-field--goal">
+              <span class="search-label">For</span>
+              <select name="goal" aria-label="Goal">
+                <option>Conversation</option>
+                <option>Work</option>
+                <option>Travel</option>
+                <option>Exams</option>
+                <option>My kids</option>
+              </select>
+            </label>
+            <button class="btn btn-primary btn-lg" type="submit">Find a tutor <span data-icon="arrow"></span></button>
+          </form>
+
+          <div class="trust reveal" style="--d:.28s">
+            <div class="avatar-stack" id="avatarStack"></div>
+            <div>
+              <div class="stars" aria-label="4.8 out of 5"><span data-icon="star"></span><span data-icon="star"></span><span data-icon="star"></span><span data-icon="star"></span><span data-icon="star"></span> <b>4.8</b></div>
+              <small>from 51,000+ lesson reviews</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="arch"><img src="https://i.pravatar.cc/600?img=32" alt="" /></div>
+          <div class="float f1">
+            <img src="https://i.pravatar.cc/120?img=44" alt="" />
+            <div><small>Next lesson · in 12 min</small><b>Spanish with Lucía</b></div>
+            <span class="live"></span>
+          </div>
+          <div class="float f2">
+            <p class="bubble them">¿Qué hiciste el fin de semana?</p>
+            <p class="bubble me">¡Fui a la playa con amigos! 🌊</p>
+          </div>
+          <div class="float f3 sticker"><span data-icon="star"></span> 4.9 · Top tutor</div>
+          <div class="float f4">
+            <small>New words this week</small>
+            <b>+18</b>
+            <div class="bars"><i style="--h:30%"></i><i style="--h:55%"></i><i style="--h:40%"></i><i style="--h:75%"></i><i style="--h:60%"></i><i style="--h:95%"></i><i style="--h:70%"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee-wrap" aria-hidden="true">
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>Hello</span><span>Hola</span><span>Bonjour</span><span>Hallo</span><span>Ciao</span><span>こんにちは</span><span>Olá</span><span>مرحبا</span>
+          <span>Hello</span><span>Hola</span><span>Bonjour</span><span>Hallo</span><span>Ciao</span><span>こんにちは</span><span>Olá</span><span>مرحبا</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats container">
+      <div class="stat reveal"><b>36,000+</b><span>vetted tutors</span></div>
+      <div class="stat reveal" style="--d:.06s"><b>120+</b><span>tutor nationalities</span></div>
+      <div class="stat reveal" style="--d:.12s"><b>4.8 ★</b><span>average lesson rating</span></div>
+      <div class="stat reveal" style="--d:.18s"><b>$10</b><span>lessons from</span></div>
+    </section>
+
+    <!-- ============ LANGUAGES ============ -->
+    <section class="section container" id="languages">
+      <div class="section-head">
+        <h2 class="reveal">Pick a language.<br />We’ll find your people.</h2>
+        <a class="link-arrow reveal" href="app/#/search">Browse all tutors <span data-icon="arrow"></span></a>
+      </div>
+      <div class="lang-grid" id="langGrid"></div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section how" id="how">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="reveal">Three steps to your first<br />real conversation</h2>
+        </div>
+        <div class="steps">
+          <article class="step reveal">
+            <span class="step-n">01</span>
+            <h3>Find your tutor</h3>
+            <p>Filter by price, schedule, accent and specialty. Watch intro videos and read honest reviews from other learners.</p>
+            <div class="step-visual chips">
+              <span class="chip on">Under $20</span><span class="chip on">Evenings</span><span class="chip">Native speaker</span><span class="chip on">Business</span><span class="chip">Top tutor</span>
+            </div>
+          </article>
+          <article class="step reveal" style="--d:.08s">
+            <span class="step-n">02</span>
+            <h3>Book a trial lesson</h3>
+            <p>Try a 25- or 50-minute lesson at a time that suits you. No subscription needed to get started.</p>
+            <div class="step-visual slots">
+              <span>09:00</span><span>09:30</span><span class="on">18:00</span><span>18:30</span><span>19:00</span><span class="off">20:00</span>
+            </div>
+          </article>
+          <article class="step step--dark reveal" style="--d:.16s">
+            <span class="step-n">03</span>
+            <h3>Speak every week</h3>
+            <p>Build a routine that sticks. Lesson notes, saved words and your progress live in the app.</p>
+            <div class="step-visual streak">
+              <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on today"></i><i></i>
+              <span><span data-icon="flame"></span> 6-week streak</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ APP FEATURE ============ -->
+    <section class="section container feature" id="app">
+      <div class="feature-copy">
+        <p class="eyebrow reveal"><span class="dot"></span> The app</p>
+        <h2 class="reveal">Your classroom fits in your pocket.</h2>
+        <ul class="ticks">
+          <li class="reveal"><span data-icon="video"></span><div><b>Video lessons in the browser</b><p>Nothing to install. Join from your phone, tablet or laptop.</p></div></li>
+          <li class="reveal"><span data-icon="chat"></span><div><b>Message tutors any time</b><p>Ask questions between lessons and share homework.</p></div></li>
+          <li class="reveal"><span data-icon="calendar"></span><div><b>Reschedule in two taps</b><p>Move a lesson up to 12 hours before it starts.</p></div></li>
+          <li class="reveal"><span data-icon="book"></span><div><b>Words saved automatically</b><p>New vocabulary from every lesson lands in your notebook.</p></div></li>
+        </ul>
+        <div class="feature-cta reveal">
+          <a class="btn btn-primary btn-lg" href="app/">Open the app <span data-icon="arrow"></span></a>
+          <small>Add it to your home screen on iPhone or Android.</small>
+        </div>
+      </div>
+      <div class="phone-wrap reveal" style="--d:.1s" aria-hidden="true">
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="ps-top"><div><small>Good evening</small><b>Hi, Sam 👋</b></div><span class="ps-avatar">S</span></div>
+            <div class="ps-next">
+              <small>Next lesson · Today 18:30</small>
+              <div class="ps-next-row"><img src="https://i.pravatar.cc/120?img=44" alt="" /><div><b>Spanish with Lucía</b><small>50 min · Conversation</small></div></div>
+              <span class="ps-join">Join lesson</span>
+            </div>
+            <div class="ps-stats"><div><b>6</b><small>week streak</small></div><div><b>24h</b><small>learned</small></div><div><b>312</b><small>words</small></div></div>
+            <div class="ps-phrase"><small>Phrase of the day</small><b>Poco a poco</b><span>Little by little</span></div>
+            <div class="ps-tab"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+          </div>
+        </div>
+        <div class="phone-blob"></div>
+      </div>
+    </section>
+
+    <!-- ============ TUTORS ============ -->
+    <section class="section tutors">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="reveal">Tutors learners keep<br />coming back to</h2>
+          <div class="scroll-btns">
+            <button type="button" class="round-btn" data-scroll="-1" aria-label="Scroll left"><span data-icon="back"></span></button>
+            <button type="button" class="round-btn" data-scroll="1" aria-label="Scroll right"><span data-icon="chevron"></span></button>
+          </div>
+        </div>
+      </div>
+      <div class="tutor-rail" id="tutorRail"></div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section container">
+      <div class="section-head">
+        <h2 class="reveal">Learners, in their words</h2>
+      </div>
+      <div class="quotes">
+        <figure class="quote tint-sky reveal">
+          <blockquote>“Three years of app streaks and I still froze on calls. Eight weeks with my tutor and I led a team meeting in Spanish.”</blockquote>
+          <figcaption><span class="initial">P</span><div><b>Priya</b><small>Product manager · learning Spanish</small></div></figcaption>
+        </figure>
+        <figure class="quote tint-sun reveal" style="--d:.08s">
+          <blockquote>“Being able to switch tutors after the trial took all the pressure off. I found my person on the second try.”</blockquote>
+          <figcaption><span class="initial">T</span><div><b>Tom</b><small>Nurse · learning German</small></div></figcaption>
+        </figure>
+        <figure class="quote tint-mint reveal" style="--d:.16s">
+          <blockquote>“Lessons at 6 a.m. before my kids wake up. Nothing else fit around my life — this does.”</blockquote>
+          <figcaption><span class="initial">A</span><div><b>Aisha</b><small>Parent of two · learning French</small></div></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ GUARANTEE ============ -->
+    <section class="container">
+      <div class="guarantee reveal">
+        <span class="guarantee-badge" data-icon="shield"></span>
+        <div>
+          <h2>Not the right fit? Your next trial is on us.</h2>
+          <p>If your first lesson doesn’t click, we’ll match you with a new tutor for free. No awkward conversations.</p>
+        </div>
+        <a class="btn btn-dark btn-lg" href="app/#/search">Find a tutor</a>
+      </div>
+    </section>
+
+    <!-- ============ TEACH ============ -->
+    <section class="section teach" id="teach">
+      <div class="container teach-grid">
+        <div>
+          <p class="eyebrow eyebrow--light reveal"><span class="dot"></span> For tutors</p>
+          <h2 class="reveal">Teach what you speak.<br />Earn on your schedule.</h2>
+          <ul class="teach-list">
+            <li class="reveal"><span data-icon="wallet"></span> Set your own price and keep what you earn</li>
+            <li class="reveal"><span data-icon="globe"></span> Teach from anywhere with an internet connection</li>
+            <li class="reveal"><span data-icon="users"></span> Get new students without doing your own marketing</li>
+          </ul>
+          <a class="btn btn-primary btn-lg reveal" href="#teach" data-soon="Tutor applications">Apply to teach <span data-icon="arrow"></span></a>
+        </div>
+        <div class="teach-collage" aria-hidden="true">
+          <img class="tc1" src="https://i.pravatar.cc/400?img=53" alt="" />
+          <img class="tc2" src="https://i.pravatar.cc/400?img=16" alt="" />
+          <img class="tc3" src="https://i.pravatar.cc/400?img=45" alt="" />
+          <div class="teach-earn"><small>This month</small><b>$2,340</b><span>86 lessons taught</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BUSINESS ============ -->
+    <section class="section container" id="business">
+      <div class="biz reveal">
+        <div>
+          <p class="eyebrow"><span class="dot"></span> For teams</p>
+          <h2>Language training your team will actually use.</h2>
+          <p>Give employees 1-on-1 lessons with vetted tutors, flexible budgets and progress reports for managers.</p>
+          <a class="btn btn-dark" href="#business" data-soon="Team plans">Talk to sales</a>
+        </div>
+        <ul class="biz-points">
+          <li><b>1-on-1</b><span>lessons tailored to each role</span></li>
+          <li><b>Monthly</b><span>progress and attendance reports</span></li>
+          <li><b>One invoice</b><span>for the whole company</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section container faq-wrap">
+      <h2 class="reveal">Questions, answered</h2>
+      <div class="faq">
+        <details class="reveal" open>
+          <summary>How much do lessons cost?</summary>
+          <p>Tutors set their own rates — most charge between $10 and $35 for a 50-minute lesson. You only pay for the lessons you book, and trial lessons can be 25 or 50 minutes.</p>
+        </details>
+        <details class="reveal">
+          <summary>What happens in a trial lesson?</summary>
+          <p>Your tutor gets to know your level and goals, then walks you through a short plan. You’ll speak a lot and leave with a clear idea of how you’d learn together.</p>
+        </details>
+        <details class="reveal">
+          <summary>Can I change tutors?</summary>
+          <p>Any time. If your first trial isn’t a fit, your next one is free, and you can move remaining lesson hours to a new tutor.</p>
+        </details>
+        <details class="reveal">
+          <summary>What do I need for a lesson?</summary>
+          <p>A phone, tablet or laptop with a camera and a microphone. Lessons run right in the browser — nothing to install.</p>
+        </details>
+        <details class="reveal">
+          <summary>Can I cancel or reschedule?</summary>
+          <p>Yes. Reschedule or cancel for free up to 12 hours before a lesson starts, straight from the Lessons tab.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="final container">
+      <h2 class="reveal">Your first conversation<br />is one lesson away.</h2>
+      <a class="btn btn-primary btn-xl reveal" href="app/#/onboarding">Get started — it’s free to browse</a>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="logo logo--light" href="./"><span class="logo-mark" data-logo></span><span>tutora</span></a>
+          <p>1-on-1 online lessons with language tutors from around the world.</p>
+          <div class="footer-selects">
+            <button type="button" data-soon="Site language"><span data-icon="globe"></span> English</button>
+            <button type="button" data-soon="Currency">USD $</button>
+          </div>
+        </div>
+        <div class="footer-cols">
+          <div><h4>Learn</h4><a href="app/#/search?lang=english">English tutors</a><a href="app/#/search?lang=spanish">Spanish tutors</a><a href="app/#/search?lang=french">French tutors</a><a href="app/#/search?lang=german">German tutors</a><a href="app/#/search">All languages</a></div>
+          <div><h4>Teach</h4><a href="#teach">Become a tutor</a><a href="#teach" data-soon="Tutor guide">Tutor guide</a><a href="#teach" data-soon="Community">Community</a></div>
+          <div><h4>Company</h4><a href="#" data-soon="About">About us</a><a href="#" data-soon="Careers">Careers</a><a href="#business">For teams</a><a href="#" data-soon="Blog">Blog</a></div>
+          <div><h4>Support</h4><a href="#" data-soon="Help centre">Help centre</a><a href="#" data-soon="Contact">Contact us</a><a href="#" data-soon="Terms">Terms</a><a href="#" data-soon="Privacy">Privacy</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Tutora. All rights reserved.</span>
+        <a class="app-pill" href="app/"><span data-icon="download"></span> Get the app</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="landing.js"></script>
+</body>
+</html>
